@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+    border-right: 4px solid #F2613F;
+    background-color: #3d0c02;
+}
+
+body {
+    background: #260701;
+}
+
+.border-gradient {
+    position: relative;
+    background: #260701;
+    /* Adjust padding to show the border */
+}
+.border-normal{
+    position: relative;
+    border: 2px solid white;
+}
+.border-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    margin: -3px;
+    background: linear-gradient(90deg, #F2613F, #ffa500, #fff);
+    border-radius: inherit;
+    /* Optional, if you want rounded corners */
+}
+
+.f {
+    background-image: linear-gradient(to bottom, rgba(0 0 0 / 0.5), rgba(0 0 0/0)), url("https://i.pinimg.com/564x/49/cd/4d/49cd4dd30a5e3f0c76240855b3fdb3bf.jpg");
+}
+
+.gradient {
+    background: linear-gradient(90deg, #F2613F, #ffa500, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#imagediv>span {
+    height: 100%;
+    width: 100%;
+}
+
+.swiper {
+    
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
