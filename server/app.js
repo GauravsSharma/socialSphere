@@ -12,11 +12,16 @@ if (process.env.MODE_ENV !== "production") {
 }
 app.use(express.json({ limit: '10mb' }));
 
-app.use(cookieParser({ sameSite: 'none' }))
+app.use(cookieParser({ sameSite: 'none' })
+)
 app.use(express.urlencoded({extended:true}))
 
 app.use("/api/v1",post);
 app.use("/api/v1",user);
 app.use("/api/v1",story);
-
+app.use("/",(req,res)=>{
+   res.json({
+    message:"Server running"
+   })
+})
 module.exports = app;

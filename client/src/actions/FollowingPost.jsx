@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = 'http://localhost:3000/api/v1'
+axios.defaults.baseURL = 'https://social-sphere-mu.vercel.app/api/v1'
 
 export const getFollowingPosts = () => async(dispatch)=>{
    try {
