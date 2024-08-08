@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-axios.defaults.baseURL = 'https://social-sphere-mu.vercel.app/api/v1'
+axios.defaults.baseURL = 'https://socialsphere-40va.onrender.com/api/v1'
 
 export const addStory = (image, caption) => async (dispatch) => {
   try {
